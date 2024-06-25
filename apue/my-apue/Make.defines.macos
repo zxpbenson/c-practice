@@ -1,0 +1,21 @@
+#
+CC = gcc
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) -c
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)
+
+#CFLAGS = -ansi -save-temps -I$(ROOT)/include -Wall -DMACOS -D_DARWIN_C_SOURCE $(EXTRA)
+CFLAGS = -ansi -I$(ROOT)/include -Wall -DMACOS -D_DARWIN_C_SOURCE $(EXTRA)
+
+LDFLAGS =
+
+LDLIBS = $(LDDIR) -lmyapue $(EXTRALIBS)
+LDDIR = -L$(ROOT)/lib
+
+RANLIB = ranlib
+AR = ar
+AWK = awk
+
+LIBMYAPUE = $(ROOT)/lib/libmyapue.a
+
+TEMPFILES = core core.* *.o temp.* *.out *.i *.s *.bc
+
