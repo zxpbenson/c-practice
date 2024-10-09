@@ -21,6 +21,6 @@ $(LIBMISC):	$(OBJS)
 
 
 clean:
-	rm -f $(LIBMISC) $(TEMPFILES)
+	rm -f $(TEMPFILES) $(LIBMISC)
 
 include $(ROOT)/Make.libmyapue.inc
