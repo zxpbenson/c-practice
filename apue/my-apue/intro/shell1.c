@@ -1,10 +1,9 @@
-/*#include <sys/wait.h>*/
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-
-#include "myapue.h"
+#include "myapue.h"    /* 自定义头文件：MAXLINE、err_sys、err_ret 等 */
+#include <stdio.h>     /* printf, fgets, stdin, NULL */
+#include <string.h>    /* strlen */
+#include <unistd.h>    /* fork, execlp, pid_t */
+#include <sys/wait.h>  /* waitpid */
+#include <stdlib.h>    /* exit */
 
 int
 main(void)

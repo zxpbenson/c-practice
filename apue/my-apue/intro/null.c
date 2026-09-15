@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include<stdio.h> /* printf */
+
 int main()
 {
     int *p = NULL;
     printf("%d\n", (int)p);
     printf("%s\n", (char *)p);
- 
 }

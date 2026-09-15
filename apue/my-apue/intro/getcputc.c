@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "myapue.h"
+#include "myapue.h"    /* err_sys */
+#include <stdio.h>     /* getc, putc, stdin, stdout, EOF, ferror */
+#include <stdlib.h>    /* exit */
 
 int
 main(void)

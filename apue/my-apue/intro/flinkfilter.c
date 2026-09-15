@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>    /* getc, putc, stdin, stdout, EOF, fflush, ferror, perror */
+#include <stdlib.h>   /* exit */
 
 #define BUFFSIZE 4096
 

@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h>    /* fprintf, stderr, perror */
+#include <string.h>   /* strerror */
+#include <errno.h>    /* errno, EACCES, ENOENT */
+#include <stdlib.h>   /* exit */
 
 int
 main(int argc, char *argv[])

@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include <stdio.h>    /* printf */
+#include <unistd.h>   /* getpid */
+#include <stdlib.h>   /* exit */
 
 int main(){
     /* stdio.h                                  unistd.h */

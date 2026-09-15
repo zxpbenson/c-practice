@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <dirent.h>
-#include <stdlib.h>
-#include "myapue.h"
+#include "myapue.h"    /* err_quit, err_sys */
+#include <dirent.h>    /* DIR, struct dirent, opendir, readdir, closedir */
+#include <stdio.h>     /* printf */
+#include <stdlib.h>    /* exit */
 
 int
 main(int argc, char *argv[])

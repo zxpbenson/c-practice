@@ -1,5 +1,5 @@
-#include <unistd.h>
-#include "myapue.h"
+#include "myapue.h"    /* err_sys, err_quit，通常内部已包含常用系统头文件 */
+#include <unistd.h>    /* read, write, STDIN_FILENO, STDOUT_FILENO */
 
 #define BUFFSIZE 4096
 
