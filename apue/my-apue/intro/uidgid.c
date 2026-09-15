@@ -1,3 +1,7 @@
+/* 
+   图 1-9
+*/
+
 #include "myapue.h"
 #include <stdio.h> /* printf */
 #include <stdlib.h> /* exit */

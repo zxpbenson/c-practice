@@ -1,3 +1,7 @@
+/* 
+   图 1-6
+*/
+
 #include <stdio.h>    /* printf */
 #include <unistd.h>   /* getpid */
 #include <stdlib.h>   /* exit */

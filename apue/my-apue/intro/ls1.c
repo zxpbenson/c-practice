@@ -1,3 +1,7 @@
+/* 
+   图 1-3
+*/
+
 #include "myapue.h"    /* err_quit, err_sys */
 #include <dirent.h>    /* DIR, struct dirent, opendir, readdir, closedir */
 #include <stdio.h>     /* printf */

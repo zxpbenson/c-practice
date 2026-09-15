@@ -3,7 +3,7 @@ PLATFORM = $(shell $(ROOT)/systype.sh)
 
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-PROGS = hello ls1 mycat getcputc shell1 null testerror flinkfilter uidgid
+PROGS = hello ls1 mycat getcputc shell1 null testerror flinkfilter uidgid shell2
 
 all : $(PROGS)
 	

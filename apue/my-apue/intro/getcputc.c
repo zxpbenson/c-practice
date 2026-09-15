@@ -1,3 +1,7 @@
+/* 
+   图 1-5
+*/
+
 #include "myapue.h"    /* err_sys */
 #include <stdio.h>     /* getc, putc, stdin, stdout, EOF, ferror */
 #include <stdlib.h>    /* exit */

@@ -1,3 +1,7 @@
+/* 
+   图 1-8
+*/
+
 #include <stdio.h>    /* fprintf, stderr, perror */
 #include <string.h>   /* strerror */
 #include <errno.h>    /* errno, EACCES, ENOENT */

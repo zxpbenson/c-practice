@@ -1,5 +1,5 @@
 /* 
-   图 1-7
+   图 1-10
 */
 
 #include "myapue.h"    /* 自定义头文件：MAXLINE、err_sys、err_ret 等 */
@@ -9,13 +9,18 @@
 #include <sys/wait.h>  /* waitpid */
 #include <stdlib.h>    /* exit */
 
+static void  sig_int(int); /* our ignal-watching function */
+
 int
 main(void)
 {
-	char buf[MAXLINE];
+	char buf[MAXLINE]; /* from myapue.h */
 	pid_t pid;
 	int status;
 	
+	if(signal(SIGINT, sig_int) == SIG_ERR)
+		err_sys("signal error");
+
 	printf("%% ");
 	while(fgets(buf, MAXLINE, stdin) != NULL){
 		if(buf[strlen(buf) - 1] == '\n')
@@ -38,4 +43,9 @@ main(void)
 	}
 	
 	exit(0);
+}
+
+void sig_int(int signo)
+{
+	printf("interrupt \n%% ");
 }
